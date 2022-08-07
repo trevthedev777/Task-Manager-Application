@@ -11,3 +11,11 @@ This application is used to store sensitive information and it is very crucial t
 ```
 touch env.py
 ```
+
+## Migrate Your DB from Python
+
+open your Python interpreter `python3`
+
+- >>> from taskmanager import db
+- >>> db.create_all()
+- >>> exit() 
