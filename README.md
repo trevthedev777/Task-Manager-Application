@@ -56,6 +56,16 @@ We will be using the `Materialize Css`
 
 ## Add New Category Function to DB using Python
 
+-   WHAT IS IT?
+    - A button called Add Category and function called add_category().
+
+- WHAT DOES IT DO?
+
+    - When a user clicks the Add Category button, the add_category() function will run. This function will provide the user with a form to save a new category to the database.
+
+- HOW DO YOU USE IT?
+    - You create your add_category() function in the routes.py and wire this up to your Add Category button.
+
 This is really easy to do and we need to create them creating `add_category.html` and `categories.html`
 
 ### add_category.html Routes and File Structure
