@@ -54,6 +54,16 @@ We will be using the `Materialize Css`
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 ```
 
+## Add New Category Function to DB using Python
+
+This is really easy to do and we need to create them creating `add_category.html` and `categories.html`
+
+### add_category.html Routes and File Structure
+
+### categories.html Routes and File Structure
+
+To add our new Category, we need to 
+
 ### Including our owned JS and CSS files
 
 We need to use the `{{ url_for }}` method when adding directories to our owned style and script files, they are not needed for `cdn` links
