@@ -54,7 +54,7 @@ We will be using the `Materialize Css`
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 ```
 
-## Add New Category Function to DB using Python
+## CREATE New Category Function to DB using Python
 
 -   WHAT IS IT?
     - A button called Add Category and function called add_category().
@@ -92,6 +92,28 @@ In our `static` folder we created our directories to `css` and `js`, then we nee
 
 This helps avoid bugs when directing our site to our needed paths
 
+## Viewing Categories - READ from Database
+
+- WHAT IS IT?
+    - A template called Categories and a function called categories().
+
+- WHAT DOES IT DO?
+    - Allows users to query the database and view all categories.
+
+- HOW DO YOU USE IT?
+    - Clicking on the navbar link for Categories will execute the function, and retrieve a list of all categories to display to the user on the front-end
+
+## UPDATING Categories
+
+- WHAT IS IT?
+    - A button called 'Edit' and a function called edit_category().
+
+- WHAT DOES IT DO?
+    - When a user clicks the 'Edit' button on the form, the edit_category() function will run. This will update the Category text in the Database.
+
+- HOW DO YOU USE IT?
+    - You create your edit_category() function in routes.py and wire this up to your Edit button.
+    
 ## Credits
 
 - Materialize css (https://materializecss.com/getting-started.html)
