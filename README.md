@@ -114,6 +114,20 @@ This helps avoid bugs when directing our site to our needed paths
 - HOW DO YOU USE IT?
     - You create your edit_category() function in routes.py and wire this up to your Edit button.
     
+
+<!-- FINISH DOCUMENTATION, rewatch and add notes for this here-->
+
+## Deleting Categories
+
+- WHAT IS IT?
+    - A button called 'Delete' and a function called delete_category().
+
+- WHAT DOES IT DO?
+    - When a user clicks the 'Delete' button, the delete_category() function will run, which will delete the category from the database.
+    
+- HOW DO YOU USE IT?
+    - You create your delete_category() function in routes.py and wire this up to your 'Delete' button on the front-end template.
+
 ## Credits
 
 - Materialize css (https://materializecss.com/getting-started.html)
