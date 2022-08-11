@@ -128,6 +128,49 @@ This helps avoid bugs when directing our site to our needed paths
 - HOW DO YOU USE IT?
     - You create your delete_category() function in routes.py and wire this up to your 'Delete' button on the front-end template.
 
+
+Deleting a category does nit require a `.html` and is all done through the backend `routes.py` file.
+
+1) Create a route and and create a function that will parse the`<int:category_id>` into our directory that is parsed as the argument, this is to let us make changes or delete the task that we select
+```
+@app.route("delete_category/<int:category_id></int:category.id>")
+def delete_category(category_id):
+```
+
+2) We should attempt to query the category table by using this `id`, if there isn's a id found then it should automatically return a 404 page
+```
+@app.route("delete_category/<int:category_id></int:category.id>")
+def delete_category(category_id):
+    category - Category.query.get_or_404(category_id)
+```
+
+3) using the db session, we need to use the `delete` method to remove this query from our `db` and then commit the session
+```
+@app.route("delete_category/<int:category_id></int:category.id>")
+def delete_category(category_id):
+    category - Category.query.get_or_404(category_id)
+    db.session.delete(category)
+    db.session.commit()
+```
+
+4) Once that has been deleted and the changes committed to our `db`, we can redirect our user back to the directory of `categories`
+```
+@app.route("delete_category/<int:category_id></int:category.id>")
+def delete_category(category_id):
+    category = Category.query.get_or_404(category_id)
+    db.session.delete(category)
+    db.session.commit()
+    return redirect(url_for("categories"))
+```
+
+5) Last step, update the `href` link from the `categories` template
+```
+<div class="card-action">
+          <a href="{{ url_for('edit_category', category_id=category.id) }}" class="btn green accent-4">Edit</a>
+          <a href="{{ url_for('delete_category', category_id=category.id) }}" class="btn red">Delete</a>
+</div>
+```
+Add defensive programming on your delete function euther using validations or modals
 ## Credits
 
 - Materialize css (https://materializecss.com/getting-started.html)
