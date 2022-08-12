@@ -178,6 +178,18 @@ Matches the form fields, form.get is each input
 matches the models schema
 <!-- REWATCH AND ADD TO DOCUMENTATION -->
 
+## Viewing Tasks
+
+- WHAT IS IT?
+    - A front-end template to allow users to view Tasks from the database.
+
+- WHAT DOES IT DO?
+    - Displays relevant details from the database about each recorded task.
+
+- HOW DO YOU USE IT?
+    - By updating the main function for the home page, we can extract all tasks, and iterate over them for display purposes.
+
+<!-- REWATCH AND ADD TO DOCUMENTATION -->
 ## Credits
 
 - Materialize css (https://materializecss.com/getting-started.html)

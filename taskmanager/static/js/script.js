@@ -12,4 +12,9 @@ $(document).ready(function(){
   $(document).ready(function(){
     $('select').formSelect();
   });
+
+  // collapsable init
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
 });
