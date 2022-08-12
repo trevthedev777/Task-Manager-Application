@@ -171,6 +171,13 @@ def delete_category(category_id):
 </div>
 ```
 Add defensive programming on your delete function euther using validations or modals
+
+## Adding Tasks
+
+Matches the form fields, form.get is each input 
+matches the models schema
+<!-- REWATCH AND ADD TO DOCUMENTATION -->
+
 ## Credits
 
 - Materialize css (https://materializecss.com/getting-started.html)
