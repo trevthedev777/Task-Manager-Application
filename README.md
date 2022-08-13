@@ -215,6 +215,7 @@ matches the models schema
 - HOW DO YOU USE IT?
     - By sending a HTTP post request to the database to delete the specified task.
 
+Add defensive programming so that a user must first verify they want to commit to the deletion
 <!-- REWATCH AND ADD TO DOCUMENTATION -->
 
 ## Credits
