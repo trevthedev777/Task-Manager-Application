@@ -190,6 +190,33 @@ matches the models schema
     - By updating the main function for the home page, we can extract all tasks, and iterate over them for display purposes.
 
 <!-- REWATCH AND ADD TO DOCUMENTATION -->
+
+## Updating Tasks
+
+- WHAT IS IT?
+    - A button called Edit task and a function called edit_task().
+
+- WHAT DOES IT DO?
+    - When a user clicks the Edit task button, the edit_task() will run. This function will provide the user with a form to edit the task
+
+- HOW DO YOU USE IT?
+    - You create your edit_task() function in routes.py and wire this up to your Edit task button.
+
+<!-- REWATCH AND ADD TO DOCUMENTATION -->
+
+## Deleting Tasks
+
+- WHAT IS IT?
+    - Delete task button.
+
+- WHAT DOES IT DO?
+    - It allows a user to delete a task from the database.
+
+- HOW DO YOU USE IT?
+    - By sending a HTTP post request to the database to delete the specified task.
+
+<!-- REWATCH AND ADD TO DOCUMENTATION -->
+
 ## Credits
 
 - Materialize css (https://materializecss.com/getting-started.html)
