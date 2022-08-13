@@ -216,6 +216,9 @@ matches the models schema
     - By sending a HTTP post request to the database to delete the specified task.
 
 Add defensive programming so that a user must first verify they want to commit to the deletion
+
+Remember that when using cascade with our relational db, that it will delete all the associated tasks created in that category, it is a good idea to include thise warning in the user authentication and defensive programming warning
+
 <!-- REWATCH AND ADD TO DOCUMENTATION -->
 
 ## Credits
