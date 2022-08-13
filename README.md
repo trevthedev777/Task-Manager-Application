@@ -233,6 +233,11 @@ This shows us the installed packages in our project
 ```
 pip3 freeze --local > requirements.txt
 ```
+
+- The `procfile` is the file Heroku looks for to run the app, to create one:
+```
+echo web: python.run.py > Procfile
+```
 ## Credits
 
 - Materialize css (https://materializecss.com/getting-started.html)
