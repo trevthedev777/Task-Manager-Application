@@ -238,6 +238,8 @@ pip3 freeze --local > requirements.txt
 ```
 echo web: python.run.py > Procfile
 ```
+
+...
 ## Credits
 
 - Materialize css (https://materializecss.com/getting-started.html)
