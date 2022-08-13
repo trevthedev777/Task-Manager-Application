@@ -221,6 +221,18 @@ Remember that when using cascade with our relational db, that it will delete all
 
 <!-- REWATCH AND ADD TO DOCUMENTATION -->
 
+## Deployment to Heroku
+
+- Add required files list to `requirements.txt`
+```
+pip3 list
+```
+This shows us the installed packages in our project
+
+- To add these packages to our `requirements.txt`
+```
+pip3 freeze --local > requirements.txt
+```
 ## Credits
 
 - Materialize css (https://materializecss.com/getting-started.html)
